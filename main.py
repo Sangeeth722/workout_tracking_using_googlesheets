@@ -20,15 +20,16 @@ header = {
 
     "x-app-id":APP_ID,
     "x-app-key":API_Key,
-    "gender":"malle",
-    "weight_kg":"60",
-    "height_cm":"173",
-    "age":"24"
+    
 
 }
 
 parameters = {
-    "query": input("Tell me which exercise you did ?")
+    "query": input("Tell me which exercise you did ?"),
+    "gender":"male",    #change your
+    "weight_kg":"60",    #change
+    "height_cm":"173",   #change
+    "age":"24"
 }
 
 response = requests.post(url=exercise_endpont,json=parameters,headers=header)
