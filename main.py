@@ -73,6 +73,5 @@ for exercise in work_out:
     }
 
     response = requests.post(url=post,json=parameters,headers=header)
-    print(response.text)
-
+  
 
